@@ -4,6 +4,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 
+//Material Components
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -11,7 +20,20 @@ import { FooterComponent } from './components/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
+  exports:[
+    NavbarComponent,
+    FooterComponent,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
+    
+
   ]
+
 })
 export class SharedModule { }
