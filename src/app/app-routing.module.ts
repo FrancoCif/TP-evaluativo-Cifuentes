@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './modules/inicio/components/inicio/inicio.component';
-
 const routes: Routes = [
 
   //ruta predeterminada de inicio
@@ -10,7 +9,12 @@ const routes: Routes = [
   },
   {
    path: "", loadChildren: () => import('./modules/inicio/inicio.module').then(m => m.InicioModule)
+  },
+
+  {
+    path: "",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)
   }
+
 ];
 
 @NgModule({
