@@ -6,6 +6,13 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
 import { RegistroComponent } from './registro/registro.component';
 
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSelectModule} from '@angular/material/select';
+
 @NgModule({
   declarations: [
     IniciarSesionComponent,
@@ -14,10 +21,22 @@ import { RegistroComponent } from './registro/registro.component';
   imports: [
     CommonModule,
     AutentificacionRoutingModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule
   ],
   exports:[
     IniciarSesionComponent,
-    RegistroComponent
+    RegistroComponent,
+    MatFormFieldModule,
+    FormsModule,
+    MatIconModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule
   ]
 })
 export class AutentificacionModule { }
