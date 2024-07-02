@@ -1,23 +1,45 @@
 
 
 
-<mat-toolbar style="display: flex;" >
+<mat-toolbar>
+    <button id="menusecciones" mat-icon-button class="example-icon" [matMenuTriggerFor]="seccion">
+        <mat-icon>menu</mat-icon>
+      </button>
 
+    <mat-menu #seccion="matMenu">
+          <button mat-menu-item routerLink="/inicio">Inicio</button>
+          <button mat-menu-item [matMenuTriggerFor]="producto">Iniciar Sesión</button>
+    </mat-menu>
 
     <span>My Application</span>
 
+    <button id="menuinicio" mat-button routerLink="/inicio">Inicio</button>
+
+    <button id="menuproductos" mat-button [matMenuTriggerFor]="producto">Productos</button>
+
+    <mat-menu #producto="matMenu">
+        <button mat-menu-item routerLink="/producto">Inicio</button>
+        <button mat-menu-item routerLinnk="/rareza">Iniciar sesion</button>
+    </mat-menu>
+
     <span class="example-spacer"></span>
 
 
-    <div>
+
+
+    <div class="menu">
         <button mat-button routerLink="/inicio">Inicio</button>
 
         <button mat-button routerLink="/iniciar-sesion">Iniciar Sesión</button>
-
-        <button mat-button routerLink="/registro">Registro</button>
     </div>
 
     <span class="example-spacer"></span>
+
+
+    <div class="icon">
+        <button mat-button routerLink="/registro"><mat-icon>account_circle</mat-icon></button>
+    </div>
+
 
 
   </mat-toolbar>
