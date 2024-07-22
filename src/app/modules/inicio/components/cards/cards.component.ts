@@ -11,17 +11,17 @@ export class CardsComponent {
 cards=[
   {
     nombre:'Zapatillas',
-    url:'../assets/Img/zapatillas-puma-caven-2-0-mujer-crudo-89067380-640010394915005-1.jpg',
+    url:'../assets/Img/NIke JOurney.webp',
     descripcion:'una zapatilla',
   },
   {
     nombre:'Zapatillas',
-    url:'../assets/Img/zapatillas-puma-caven-2-0-mujer-crudo-89067380-640010394915005-1.jpg',
+    url:'../assets/Img/NIke JOurney.webp',
     descripcion:'una zapatilla',
   },
   {
     nombre:'Zapatillas',
-    url:'../assets/Img/zapatillas-puma-caven-2-0-mujer-crudo-89067380-640010394915005-1.jpg',
+    url:'../assets/Img/NIke JOurney.webp',
     descripcion:'una zapatilla',
   }
 ]

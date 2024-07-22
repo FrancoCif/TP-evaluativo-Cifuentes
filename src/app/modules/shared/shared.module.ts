@@ -10,10 +10,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {AppRoutingModule } from 'src/app/app-routing.module';
 
-
-
-
-
+import {Component} from '@angular/core';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,9 @@ import {AppRoutingModule } from 'src/app/app-routing.module';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDividerModule,
+    MatMenuModule
     
   ],
   exports:[
@@ -33,9 +34,9 @@ import {AppRoutingModule } from 'src/app/app-routing.module';
     FooterComponent,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
-    
-
+    MatButtonModule,
+    MatDividerModule,
+    MatMenuModule
   ]
 
 })
