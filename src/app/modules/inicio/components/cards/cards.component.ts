@@ -10,19 +10,24 @@ export class CardsComponent {
 
 cards=[
   {
-    nombre:'Zapatillas',
+    nombre:'Zapatillas1',
     url:'../assets/Img/NIke JOurney.webp',
     descripcion:'una zapatilla',
   },
   {
-    nombre:'Zapatillas',
+    nombre:'Zapatillas2',
     url:'../assets/Img/NIke JOurney.webp',
-    descripcion:'una zapatilla',
+    descripcion:'dos zapatilla',
   },
   {
-    nombre:'Zapatillas',
+    nombre:'Zapatillas3',
     url:'../assets/Img/NIke JOurney.webp',
-    descripcion:'una zapatilla',
+    descripcion:'tres zapatilla',
+  },
+  {
+    nombre:'Zapatillas3',
+    url:'../assets/Img/NIke JOurney.webp',
+    descripcion:'tres zapatilla',
   }
 ]
 
